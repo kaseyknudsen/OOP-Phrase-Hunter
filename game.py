@@ -49,8 +49,8 @@ class Game:
         self.play_again()
 
     def get_guess(self):
-        user_input = input("\nPlease guess a letter (to quit, type 'quit'):  ")
-        if user_input.lower() == "quit":
+        user_input = input("\nPlease guess a letter (to quit, type 'quit'):  ").lower()
+        if user_input == "quit":
             sys.exit()
         elif len(user_input) > 1:
             print("Invalid entry. Your entry must not be longer than 1 letter.")
